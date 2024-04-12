@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MamaMia Bar | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="revisit-after" content="1 month">
+    <meta name="rating" content="general">
+    <meta name="distribution" content="global">
+    <meta name="generator" content="WebStorm">
+    <meta name="theme-color" content="#000000">
+    <!-- Primary Meta Tags -->
+    <meta name="language" content="English">
+    <meta name="title" content="MamaMia Bar">
+    <meta name="description"
+          content="MamaMia Bar is a bar in the city of New York. It is a place where people can enjoy a drink and a good time.">
+    <meta name="keywords" content="MamaMia Bar, New York, bar, drink, party, fun, people, New York City">
+    <meta name="author" content="MamaMia Bar">
+    <!-- SEO Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="msapplication-TileImage" content="images/favicon.png">
+    <meta name="theme-color" content="#000000">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <!-- x meta for seo -->
+    <meta property="og:title" content="MamaMia Bar">
+    <meta property="og:description"
+          content="MamaMia Bar is a bar in the city of New York. It is a place where people can enjoy a drink and a good time.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.mamamia-bar.com">
+    <meta property="og:image" content="images/favicon.png">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
+    <!-- Multi-Language javascript on page -->
+    <script src="js/multi-language.js"></script>
+    <script src="js/hashmap.js"></script>
+    <script src="js/script.js"></script>
+    <!-- landing.css -->
+    <link rel="stylesheet" href="css/landing.css">
+    <!-- tailwind.css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+</head>
+<nav>
+    <header class="border-b border-gray-300 py-4">
+        <nav class="" x-data="{navbarOpen:false}">
+            <div class="container flex flex-wrap px-4 py-2 mx-auto flex items-center justify-between lg:space-x-4">
+                <a href="index.html"
+                   class="block mt-4 hover:underline hover:no-underline transition duration-200 ease-in-out border-2 border-transparent border-solid rounded-lg px-4 py-2">
+                    <img src="/images/favicon.png" class="left-0 top-0 w-12 h-12" alt="">
+                </a>
+                <div class="flex items-center">
+                    <!-- language svg -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         class="bi bi-globe-americas" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8"/>
+                        <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484q-.121.12-.242.234c-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z"/>
+                    </svg>
+                    <span id="language-select">Language:</span>
+                    <select class="ml-2 text-gray-800 text-sm" id="language" onchange="changeLanguage(this)">
+                        <option id="language-select-en" value="en" selected>English</option>
+                        <option id="language-select-ja" value="ja">日本語</option>
+                        <option id="language-select-zh-hant" value="zh-hant">繁體中文</option>
+                        <option id="language-select-zh-hans" value="zh-hans">简体中文</option>
+                    </select>
+                </div>
+            </div>
+        </nav>
+    </header>
+</nav>
+<main>
+    <section>
+        <div class="fixed">
+            <img src="images/landing/section-1.jpg"
+                 alt="">
+            <div class="content">
+                <h1 class="text-slate-900 text-4xl sm:text-5xl lg:text-6xl ark:text-white" id="title">Welcome to MamaMia
+                    Bar</h1>
+                <p id="subtitle"><br/>Experience the best drinks and a vibrant atmosphere..</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <article>
+            <div class="fixed">
+                <img src="images/landing/section-2.jpg" alt="Unwind and Enjoy">
+            </div>
+            <div class="static">
+                <div class="content">
+                    <div class="text-wrap">
+                        <div class="loud-wrap">
+                            <h2 class="text-slate-900 text-4xl sm:text-5xl lg:text-6xl ark:text-white"
+                                id="unwind-and-enjoy">Unwind and Enjoy</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article>
+            <div class="fixed"></div>
+            <div class="static">
+                <div class="content">
+                    <h2>
+                        <br/></h2>
+                </div>
+            </div>
+        </article>
+        <article>
+            <div class="fixed">
+                <img src="images/landing/section-3.jpg"
+                     alt="Crafting Exquisite Cocktails">
+            </div>
+            <div class="static">
+                <div class="content text-blocks">
+                    <h2 class="text-slate-900 text-4xl sm:text-5xl lg:text-6xl ark:text-white" id="drink-selection">
+                        Crafting Exquisite Cocktails</h2>
+                    <div class="chat-container">
+                        <div class="text-blocks p-2">
+                            <p id="drink-selection-1">Indulge in our handcrafted cocktails.</p>
+                            <p id="drink-selection-2">Our expert mixologists use the finest ingredients to create unique
+                                flavors.</p>
+                            <p id="drink-selection-3">Whether you prefer classic or innovative cocktails, we have
+                                something for everyone.</p>
+                            <p id="drink-selection-4">Join us and experience the art of mixology at MamaMia Bar.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="filler">
+                    <h2 id="discover-your-favorite">Discover Your Favorite</h2>
+                </div>
+            </div>
+            </div>
+        </article>
+        <article>
+            <div class="fixed">
+                <img src="images/landing/section-4.jpg" alt="Join Us at MamaMia Bar">
+                <div class="content">
+                    <h2 class="text-slate-900 text-4xl sm:text-5xl lg:text-6xl ark:text-white" id="join-us">Join Us at
+                        MamaMia Bar</h2>
+                    </br>
+                    <p id="enjoy-the-nightlife">Experience the vibrant nightlife and unforgettable moments.</p>
+                    <p id="visit-our-menu">Visit our menu to explore our drink selection and find your perfect sip.</p>
+                    <a href="menu.html"
+                       class="block mx-auto mt-4 text-center text-white hover:text-yellow-500 hover:underline hover:no-underline transition duration-200 ease-in-out border-2 border-transparent border-solid rounded-lg px-4 py-2 text-left">
+                        <span class="inline-block" id="menu">Menu</span>
+                    </a>
+                </div>
+            </div>
+        </article>
+    </section>
+    <footer class="bg-gray-900 text-gray-500 px-10">
+        <div class="w-full bg-gray-900 text-gray-500 px-10">
+            <div class="container mx-auto px-4 py-6 text-center">
+                <p id="copyright">Copyright © 2024</p>
+                <a target="_blank" href="https://www.mamamia.com">Mama Mia</a>
+                All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+</main>
+</html>

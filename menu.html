@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MamaMia Bar | Menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="revisit-after" content="1 month">
+    <meta name="rating" content="general">
+    <meta name="distribution" content="global">
+    <meta name="generator" content="WebStorm">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Primary Meta Tags -->
+    <meta name="language" content="English">
+    <meta name="title" content="MamaMia Bar">
+    <meta name="description"
+          content="MamaMia Bar is a bar in the city of New York. It is a place where people can enjoy a drink and a good time.">
+    <meta name="keywords" content="MamaMia Bar, New York, bar, drink, party, fun, people, New York City">
+    <meta name="author" content="MamaMia Bar">
+    <!-- SEO Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favicon.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <!-- Multi-Language javascript on page -->
+    <script src="js/multi-language.js"></script>
+    <script src="js/script.js"></script>
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- tailwind.css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+</head>
+<body>
+<header class="border-b border-gray-300 py-4">
+    <nav x-data="{navbarOpen:false}">
+        <div class="container flex flex-wrap px-4 py-2 mx-auto flex items-center justify-between lg:space-x-4">
+            <a href="index.html" class="left-0 top-0 w-12 h-12">
+                <img src="/images/favicon.png" class="left-0 top-0 w-12 h-12" alt="">
+            </a>
+            <div class="items-center justify-center w-full lg:inline-flex lg:w-auto mt-2 lg:mt-0"
+                 :class="{'hidden':!navbarOpen,'flex':navbarOpen}">
+                <ul class="flex flex-col lg:flex-row items-center">
+                    <li>
+                        <a id="navbar-home" href="index.html"
+                           class="flex px-4 py-2 transition hover:bg-gray-200 rounded-md">
+                            Home</a>
+                    </li>
+                    <li>
+                        <a id="navbar-menu" href="menu.html"
+                           class="flex px-4 py-1 transition hover:bg-gray-200 rounded-md active bg-gradient-to-r border-t-2 border-green-400 bg-gradient-to-br from-indigo-400 to-green-500 hover:via-blue-700 hover:to-purple-700 text-white round-md flex md:inline-flex font-medium text-lg cursor-pointer hover:shadow-lg transition">Menu</a>
+                    </li>
+                    <li>
+                        <a id="navbar-about" href="about.html"
+                           class="flex px-4 py-2 transition hover:bg-gray-200 rounded-md">About</a>
+                    </li>
+                    <li>
+                        <a id="navbar-contact" href="contact.html"
+                           class="flex px-4 py-2 transition hover:bg-gray-200 rounded-md">Contact
+                            Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center">
+                <!-- language svg -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                     class="bi bi-globe-americas" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8"/>
+                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484q-.121.12-.242.234c-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z"/>
+                </svg>
+                <span id="language-select">Language:</span>
+                <select class="ml-2 text-gray-800 text-sm" id="language" onchange="changeLanguage(this)">
+                    <option id="language-select-en" value="en" selected>English</option>
+                    <option id="language-select-ja" value="ja">日本語</option>
+                    <option id="language-select-zh-hant" value="zh-hant">繁體中文</option>
+                    <option id="language-select-zh-hans" value="zh-hans">简体中文</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+</header>
+<section class="hero py-4 py-8 md:px-24" id="Menu-section">
+    <div class="container mx-auto">
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8" id="Menu-title">Featured
+            Drink</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="bg-white shadow-lg rounded-lg p-8 mb-8">
+                <img src="images/drink/drink1.png" alt="Drink 1" class="w-full h-40 object-cover mb-5 rounded-lg">
+                <h2 id="drink-1-title" class="text-xl font-bold mb-2">Premium Coffee Blend</h2>
+                <p id="drink-1-description" class="text-gray-600">Experience the rich flavor and aroma of our premium
+                    coffee blend. Made from carefully selected coffee beans, this blend offers a smooth and satisfying
+                    taste.</p>
+                <p id="drink-1-price" class="text-gray-600 font-bold">Price: $12.99</p>
+                <button id="drink-1-add-to-cart" class="bg-yellow-500 text-white px-4 py-2 mt-4 rounded-md">Add to
+                    Cart
+                </button>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg p-8 mb-8">
+                <img src="images/drink/drink2.png" alt="Drink 2" class="w-full h-40 object-cover mb-5 rounded-lg">
+                <h2 id="drink-2-title" class="text-xl font-bold mb-2">Handcrafted Cocktail Set</h2>
+                <p id="drink-2-description" class="text-gray-600">Elevate your home bar with our handcrafted cocktail
+                    set. It includes a variety of premium spirits, mixers, and garnishes, allowing you to create
+                    delicious cocktails at home.</p>
+                <p id="drink-2-price" class="text-gray-600 font-bold">Price: $49.99</p>
+                <button id="drink-2-add-to-cart" class="bg-yellow-500 text-white px-4 py-2 mt-4 rounded-md">Add to
+                    Cart
+                </button>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg p-8 mb-8">
+                <img src="images/drink/drink3.png" alt="Drink 3" class="w-full h-40 object-cover mb-5 rounded-lg">
+                <h2 id="drink-3-title" class="text-xl font-bold mb-2">Artisanal Cheese Selection</h2>
+                <p id="drink-3-description" class="text-gray-600">Indulge in our artisanal cheese selection, featuring
+                    a variety of handcrafted cheeses from local farms. Each cheese is carefully aged to perfection,
+                    offering a unique and flavorful experience.</p>
+                <p id="drink-3-price" class="text-gray-600 font-bold">Price: $19.99</p>
+                <button id="drink-3-add-to-cart" class="bg-yellow-500 text-white px-4 py-2 mt-4 rounded-md">Add to
+                    Cart
+                </button>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg p-8 mb-8">
+                <img src="images/drink/drink4.png" alt="Drink 4" class="w-full h-40 object-cover mb-5 rounded-lg">
+                <h2 id="drink-4-title" class="text-xl font-bold mb-2">Mojito</h2>
+                <p id="drink-4-description" class="text-gray-600">A classic cocktail made with rum, fresh mint, lime
+                    juice, sugar, and soda water.</p>
+                <p id="drink-4-price" class="text-gray-600 font-bold">Price: $8.50</p>
+                <button id="drink-4-add-to-cart" class="bg-yellow-500 text-white px-4 py-2 mt-4 rounded-md">Add to
+                    Cart
+                </button>
+
+            </div>
+            <div class="bg-white shadow-lg rounded-lg p-8 mb-8">
+                <img src="images/drink/drink5.png" alt="Drink 5" class="w-full h-40 object-cover mb-5 rounded-lg">
+                <h2 id="drink-5-title" class="text-xl font-bold mb-2">Old Fashioned</h2>
+                <p id="drink-5-description" class="text-gray-600">A timeless blend of bourbon, sugar, bitters, and a
+                    twist of orange zest.</p>
+                <p id="drink-5-price" class="text-gray-600 font-bold">Price: $10.00</p>
+                <button id="drink-5-add-to-cart" class="bg-yellow-500 text-white px-4 py-2 mt-4 rounded-md">Add to
+                    Cart
+                </button>
+
+            </div>
+
+            <div class="bg-white shadow-lg rounded-lg p-8 mb-8">
+
+                <img src="images/drink/drink6.png" alt="Drink 6" class="w-full h-40 object-cover mb-5 rounded-lg">
+                <h2 id="drink-6-title" class="text-xl font-bold mb-2">Cosmopolitan</h2>
+                <p id="drink-6-description" class="text-gray-600">A vibrant mix of vodka, cranberry juice, orange
+                    liqueur, and lime juice.</p>
+                <p id="drink-6-price" class="text-gray-600 font-bold">Price: $9.50</p>
+                <button id="drink-6-add-to-cart" class="bg-yellow-500 text-white px-4 py-2 mt-4 rounded-md">Add to
+                    Cart
+                </button>
+            </div>
+            <!-- Drink 7 -->
+            <div class="bg-white shadow-lg rounded-lg p-8 mb-8">
+                <img src="images/drink/drink7.png" alt="Drink 7" class="w-full h-40 object-cover mb-5 rounded-lg">
+                <h2 id="drink-7-title" class="text-xl font-bold mb-2">Manhattan</h2>
+                <p id="drink-7-description" class="text-gray-600">A sophisticated mix of whiskey, sweet vermouth, and a
+                    dash of bitters.</p>
+                <p id="drink-7-price" class="text-gray-600 font-bold">Price: $11.50</p>
+                <button id="drink-7-add-to-cart" class="bg-yellow-500 text-white px-4 py-2 mt-4 rounded-md">Add to
+                    Cart
+                </button>
+            </div>
+            <!-- Drink 8 -->
+            <div class="bg-white shadow-lg rounded-lg p-8 mb-8">
+                <img src="images/drink/drink8.png" alt="Drink 8" class="w-full h-40 object-cover mb-5 rounded-lg">
+                <h2 id="drink-8-title" class="text-xl font-bold mb-2">Sazerac</h2>
+                <p id="drink-8-description" class="text-gray-600">A New Orleans classic made with rye whiskey, absinthe,
+                    sugar, and Peychaud's bitters.</p>
+                <p id="drink-8-price" class="text-gray-600 font-bold">Price: $12.00</p>
+                <button id="drink-8-add-to-cart" class="bg-yellow-500 text-white px-4 py-2 mt-4 rounded-md">Add to
+                    Cart
+                </button>
+            </div>
+            <!-- Drink 9 -->
+            <div class="bg-white shadow-lg rounded-lg p-8 mb-8">
+                <img src="images/drink/drink9.png" alt="Drink 9" class="w-full h-40 object-cover mb-5 rounded-lg">
+                <h2 id="drink-9-title" class="text-xl font-bold mb-2">Gin and Tonic</h2>
+                <p id="drink-9-description" class="text-gray-600">A refreshing combination of gin, tonic water, and a
+                    squeeze of fresh lime.</p>
+                <p id="drink-9-price" class="text-gray-600 font-bold">Price: $7.50</p>
+                <button id="drink-9-add-to-cart" class="bg-yellow-500 text-white px-4 py-2 mt-4 rounded-md">Add to
+                    Cart
+                </button>
+            </div>
+            <!-- Drink 10 -->
+            <div class="bg-white shadow-lg rounded-lg p-8 mb-8">
+                <img src="images/drink/drink10.png" alt="Drink 10" class="w-full h-40 object-cover mb-5 rounded-lg">
+                <h2 id="drink-10-title" class="text-xl font-bold mb-2">Daiquiri</h2>
+                <p id="drink-10-description" class="text-gray-600">A simple yet delicious blend of rum, lime juice, and
+                    sugar.</p>
+                <p id="drink-10-price" class="text-gray-600 font-bold">Price: $8.00</p>
+                <button id="drink-10-add-to-cart" class="bg-yellow-500 text-white px-4 py-2 mt-4 rounded-md">Add to
+                    Cart
+                </button>
+            </div>
+            <!-- Drink 11 -->
+            <div class="bg-white shadow-lg rounded-lg p-8 mb-8">
+                <img src="images/drink/drink11.png" alt="Drink 11" class="w-full h-40 object-cover mb-5 rounded-lg">
+                <h2 id="drink-11-title" class="text-xl font-bold mb-2">Whiskey Sour</h2>
+                <p id="drink-11-description" class="text-gray-600">A tangy mix of whiskey, lemon juice, and a touch of
+                    sweetness.</p>
+                <p id="drink-11-price" class="text-gray-600 font-bold">Price: $9.00</p>
+                <button id="drink-11-add-to-cart" class="bg-yellow-500 text-white px-4 py-2 mt-4 rounded-md">Add to
+                    Cart
+                </button>
+            </div>
+            <!-- Drink 12 -->
+            <div class="bg-white shadow-lg rounded-lg p-8 mb-8">
+                <img src="images/drink/drink12.png" alt="Drink 12" class="w-full h-40 object-cover mb-5 rounded-lg">
+                <h2 id="drink-12-title" class="text-xl font-bold mb-2">Martini</h2>
+                <p id="drink-12-description" class="text-gray-600">A classic cocktail made with gin (or vodka) and a
+                    hint of dry vermouth, garnished with an olive or lemon twist.</p>
+                <p id="drink-12-price" class="text-gray-600 font-bold">Price: $10.50</p>
+                <button id="drink-12-add-to-cart" class="bg-yellow-500 text-white px-4 py-2 mt-4 rounded-md">Add to
+                    Cart
+                </button>
+            </div>
+        </div>
+    </div>
+<!--    Cart out-->
+
+</section>
+<footer>
+    <div class="p-10 bg-gradient-to-r from-purple-400 via-indigo-500 to-pink-500 text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-2 gap-10">
+                <div class="mb-5">
+                    <img src="/images/favicon.png" class="w-20 h-20 rounded-full"
+                         alt="Mama Mia logo">
+                    <h4 class="text-2xl pb-4 font-medium">Mama Mia</h4>
+                    <p class="text-white">
+                        <span id="address">
+                        New York, NY<br>
+                            </span>
+                        <br>
+                        <strong id="phone">Phone:</strong> +1 (202) 555-0123<br>
+                        <strong id="email">Email:</strong> me@mamamia.com<br>
+                        <strong id="website">Website:</strong> <a href="https://mamamia.com">mamamia.com</a>
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 grid-row-2 gap-5">
+                    <div class="mb-5">
+                        <h4 class="text-2xl pb-4 text-white font-semibold" id="useful-links">
+                            Useful Links
+                        </h4>
+                        <ul class="flex flex-col space-y-3">
+                            <li class="pd-8">
+                                <a href="index.html" class="hover:text-yellow-500" id="home">Home</a>
+                            </li>
+                            <li class="pd-8">
+                                <a href="menu.html" class="hover:text-yellow-500" id="menu">Menu</a>
+                            </li>
+                            <li class="pd-8">
+                                <a href="about.html" class="hover:text-yellow-500" id="about">About</a>
+                            </li>
+                            <li class="pd-8">
+                                <a href="contact.html" class="hover:text-yellow-500" id="contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <form>
+                    <label>
+                        <input type="email" class="text-gray-500 w-2/3 p-2 focus-border-white rounded-2xl"
+                               placeholder="example@example.com"
+                               style="background-size: auto 24px !important; background-position: right center !important; background-repeat: no-repeat !important; background-origin: content-box !important;">
+                        <button
+                                id="newsletter-subscribe"
+                                class="p-2 w1/3 bg-yellow-500 text-white hover:bg-yellow-600 rounded-2xl">
+                            Subscribe
+                        </button>
+                    </label>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="w-full bg-gray-900 text-gray-500 px-10">
+        <div class="container mx-auto px-4 py-6 text-center">
+            <p id="copyright">
+                Copyright © 2024
+                <a target="_blank" href="https://www.mamamia.com">Mama Mia</a>
+                All Rights Reserved.
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
