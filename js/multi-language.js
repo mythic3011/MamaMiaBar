@@ -460,6 +460,11 @@ const languageMap_about = {
 }
 const languageMap_Context = {
     en: {
+        "contact-form-name-label": "Name",
+        "contact-form-email-label": "Email",
+        "contact-form-message-label": "Message",
+        "contact-form-captcha-label": "CAPTCHA",
+        "contact-form-submit": "Send",
         "contact-title": "Contact Us",
         "contact-description": "We're always looking for ways to improve our services and create a better experience for our customers.",
         "contact-title-form": "Send us a message",
@@ -476,6 +481,11 @@ const languageMap_Context = {
         "contact-form-email-error": "請輸入有效的電子郵件地址。",
         "contact-form-message-error": "請輸入只包含字母和數字的字串。",
         "contact-form-checkbox-error": "請選擇一個勾選框。",
+        "contact-form-name-label": "名稱",
+        "contact-form-email-label": "電子郵件",
+        "contact-form-message-label": "訊息",
+        "contact-form-captcha-label": "CAPTCHA",
+        "contact-form-submit": "傳送",
     },
     "zh-hans": {
         "contact-title": "联系我们",
@@ -485,6 +495,11 @@ const languageMap_Context = {
         "contact-form-email-error": "请输入有效的电子邮件地址。",
         "contact-form-message-error": "请输入只包含字母和数字的字串。",
         "contact-form-checkbox-error": "请选择一个复选框。",
+        "contact-form-name-label": "名称",
+        "contact-form-email-label": "电子邮件",
+        "contact-form-message-label": "消息",
+        "contact-form-captcha-label": "CAPTCHA",
+        "contact-form-submit": "发送",
     },
     ja: {
         "contact-title": "お問い合わせ",
@@ -494,8 +509,14 @@ const languageMap_Context = {
         "contact-form-email-error": "有効なメールアドレスを入力してください。",
         "contact-form-message-error": "メッセージのみ英数字を入力してください。",
         "contact-form-checkbox-error": "チェックボックスを選択してください。",
+        "contact-form-name-label": "名前",
+        "contact-form-email-label": "メール",
+        "contact-form-message-label": "メッセージ",
+        "contact-form-captcha-label": "CAPTCHA",
+        "contact-form-submit": "送信",
     },
 }
+
 
 
 

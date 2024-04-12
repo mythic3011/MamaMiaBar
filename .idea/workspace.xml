@@ -5,28 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d77d1c48-c89b-4932-bc12-a417895373d8" name="Changes" comment="upload">
-      <change afterPath="$PROJECT_DIR$/MamaMia/about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MamaMia/css/Menu.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MamaMia/css/about.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MamaMia/css/contact.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MamaMia/images/drink/drink1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MamaMia/images/drink/drink10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MamaMia/images/drink/drink11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MamaMia/images/drink/drink12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MamaMia/images/drink/drink2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MamaMia/images/drink/drink3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MamaMia/images/drink/drink4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MamaMia/images/drink/drink5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MamaMia/images/drink/drink6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MamaMia/images/drink/drink7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MamaMia/images/drink/drink8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MamaMia/images/drink/drink9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MamaMia/js/cart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MamaMia/js/contact.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MamaMia/css/landing.css" beforeDir="false" afterPath="$PROJECT_DIR$/MamaMia/css/landing.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MamaMia/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/MamaMia/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MamaMia/js/multi-language.js" beforeDir="false" afterPath="$PROJECT_DIR$/MamaMia/js/multi-language.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MamaMia/js/newletter.js" beforeDir="false" afterPath="$PROJECT_DIR$/MamaMia/js/newsletter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/multi-language.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/multi-language.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +34,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/samwell9624/MamaMia.git&quot;,
+    &quot;url&quot;: &quot;https://github.com/samwell9624/MamaMiaBar.git&quot;,
     &quot;accountId&quot;: &quot;f92af372-feb4-443f-8da6-8ee2669e7335&quot;
   }
 }</component>
@@ -70,22 +51,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/a1667/WebstormProjects/MamaMia-Pure-CSS",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/a1667/WebstormProjects/MamaMia&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\a1667\WebstormProjects\MamaMia\MamaMia" />
@@ -127,6 +108,8 @@
       <workItem from="1712667329627" duration="601000" />
       <workItem from="1712755163407" duration="889000" />
       <workItem from="1712908596250" duration="45769000" />
+      <workItem from="1712956796388" duration="115000" />
+      <workItem from="1712957149839" duration="337000" />
     </task>
     <task id="LOCAL-00001" summary="upload">
       <option name="closed" value="true" />
@@ -200,7 +183,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712954784161</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="upload">
+      <option name="closed" value="true" />
+      <created>1712956902098</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1712956902098</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -71,10 +71,8 @@
                  :class="{'hidden':!navbarOpen,'flex':navbarOpen}">
                 <ul class="flex flex-col lg:flex-row items-center">
                     <li>
-                        <!-- selected button -->
-                        <!--                        class="flex px-4 py-1 transition hover:bg-gray-200 rounded-md active bg-gradient-to-r border-t-2 border-green-400 bg-gradient-to-br from-indigo-400 to-green-500 hover:via-blue-700 hover:to-purple-700 text-white round-md flex md:inline-flex font-medium text-lg cursor-pointer hover:shadow-lg transition-->
-                        <a href="index.html" class="flex px-4 py-2 transition hover:bg-gray-200 rounded-md">
-                            Home</a>
+                        <a href="index.html" class="flex px-4 py-2 transition hover:bg-gray-200 rounded-md"
+                           id="navbar-home">Home</a>
                     </li>
                     <li>
                         <a href="menu.html" class="flex px-4 py-2 transition hover:bg-gray-200 rounded-md"
@@ -85,7 +83,7 @@
                            id="navbar-about">About</a>
                     </li>
                     <li>
-                        <a href="contact.html" class="flex px-4 py-2 transition hover:bg-gray-200 rounded-md"
+                        <a href="contact.html" class="flex px-4 py-1 transition hover:bg-gray-200 rounded-md active bg-gradient-to-r border-t-2 border-green-400 bg-gradient-to-br from-indigo-400 to-green-500 hover:via-blue-700 hover:to-purple-700 text-white round-md flex md:inline-flex font-medium text-lg cursor-pointer hover:shadow-lg transition"
                            id="navbar-contact">Contact
                             Us</a>
                     </li>
@@ -113,21 +111,21 @@
     <div class="w-full max-w-xs mx-auto pt-20">
         <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
             <div class="mb-4">
-                <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="name" id="contact-form-name-label">
                     Name
                 </label>
                 <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                        id="name" type="text" placeholder="Your Name">
             </div>
             <div class="mb-4">
-                <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="email" id="contact-form-email-label">
                     Email
                 </label>
                 <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                        id="email" type="email" placeholder="Your Email">
             </div>
             <div class="mb-6">
-                <label class="block text-gray-700 text-sm font-bold mb-2" for="message">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="message" id="contact-form-message-label">
                     Message
                 </label>
                 <textarea
@@ -135,7 +133,7 @@
                         id="message" placeholder="Your Message"></textarea>
             </div>
             <div class="mb-6">
-                <label class="block text-gray-700 text-sm font-bold mb-2" for="captcha">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="captcha" id="contact-form-captcha-label">
                     CAPTCHA
                 </label>
                 <div id="captcha" class="mb-4 items-center justify-center">
@@ -145,7 +143,7 @@
             </div>
             <div class="flex items-center justify-between">
                 <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                        type="submit">
+                        type="submit" id="contact-form-submit">
                     Send
                 </button>
             </div>
