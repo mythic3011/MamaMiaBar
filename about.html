@@ -69,8 +69,7 @@
                  :class="{'hidden':!navbarOpen,'flex':navbarOpen}">
                 <ul class="flex flex-col lg:flex-row items-center">
                     <li>
-                        <!--                        class="flex px-4 py-1 transition hover:bg-gray-200 rounded-md active bg-gradient-to-r border-t-2 border-green-400 bg-gradient-to-br from-indigo-400 to-green-500 hover:via-blue-700 hover:to-purple-700 text-white round-md flex md:inline-flex font-medium text-lg cursor-pointer hover:shadow-lg transition-->
-                        <a href="index.html" class="flex px-4 py-2 transition hover:bg-gray-200 rounded-md">
+                        <a href="index.html" class="flex px-4 py-2 transition hover:bg-gray-200 rounded-md" id="navbar-home">
                             Home</a>
                     </li>
                     <li>
@@ -78,7 +77,8 @@
                            id="navbar-menu">Menu</a>
                     </li>
                     <li>
-                        <a href="about.html" class="flex px-4 py-1 transition hover:bg-gray-200 rounded-md active bg-gradient-to-r border-t-2 border-green-400 bg-gradient-to-br from-indigo-400 to-green-500 hover:via-blue-700 hover:to-purple-700 text-white round-md flex md:inline-flex font-medium text-lg cursor-pointer hover:shadow-lg transition"
+                        <a href="about.html"
+                           class="flex px-4 py-1 transition hover:bg-gray-200 rounded-md active bg-gradient-to-r border-t-2 border-green-400 bg-gradient-to-br from-indigo-400 to-green-500 hover:via-blue-700 hover:to-purple-700 text-white round-md flex md:inline-flex font-medium text-lg cursor-pointer hover:shadow-lg transition"
                            id="navbar-about">About</a>
                     </li>
                     <li>
@@ -109,31 +109,35 @@
 </header>
 <section class="hero py-4 py-8 md:px-24">
     <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8"
-            id="about-title">About MamaMia Bar</h1>
+        id="about-title">About MamaMia Bar</h1>
     <div class="about-div" id="about-div">
         <div class="bg-white shadow-lg rounded-lg p-8 mb-8">
             <h2 id="about-h2-1" class="text-left text-2xl font-medium text-gray-600">What is MamaMia Bar?</h2>
-            <p id="about-p1" class="text-left p-2">MamaMia Bar is a bar located in the city of New York. It is a place where people can
+            <p id="about-p1" class="text-left p-2">MamaMia Bar is a bar located in the city of New York. It is a place
+                where people can
                 enjoy a drink and have a good time. Our bar offers a wide selection of beverages, including
                 cocktails, beers, and spirits. We also have a friendly and welcoming atmosphere, making it the
                 perfect place to hang out with friends or meet new people.</p>
         </div>
         <div class="bg-white shadow-lg rounded-lg p-8 mb-8">
             <h2 id="about-h2-2" class="text-left text-2xl font-medium text-gray-600">Our Staff</h2>
-            <p id="about-p2" class="text-left p-2">At MamaMia Bar, we strive to provide excellent service and create memorable experiences
+            <p id="about-p2" class="text-left p-2">At MamaMia Bar, we strive to provide excellent service and create
+                memorable experiences
                 for our customers. Our staff is knowledgeable and passionate about mixology, ensuring that every
                 drink is crafted with care and precision. Whether you're looking for a classic cocktail or a unique
                 creation, our talented bartenders will exceed your expectations.</p>
         </div>
         <div class="bg-white shadow-lg rounded-lg p-8 mb-8">
             <h2 id="about-h2-3" class="text-left text-2xl font-medium text-gray-600">Our History</h2>
-            <p id="about-p3" class="text-left p-2">Our bar is also known for its vibrant and lively events. From live music performances to
+            <p id="about-p3" class="text-left p-2">Our bar is also known for its vibrant and lively events. From live
+                music performances to
                 themed parties, there's always something exciting happening at MamaMia Bar. We believe in creating a fun
                 and energetic environment where people can dance, socialize, and have a great time.</p>
         </div>
         <div class="bg-white shadow-lg rounded-lg p-8 mb-8">
             <h2 id="about-h2-4" class="text-left text-2xl font-medium text-gray-600">Our Mission</h2>
-            <p id="about-p4" class="text-left p-2">Visit MamaMia Bar today and experience the vibrant nightlife of New York City. We look
+            <p id="about-p4" class="text-left p-2">Visit MamaMia Bar today and experience the vibrant nightlife of New
+                York City. We look
                 forward to serving you!</p>
         </div>
     </div>
@@ -148,32 +152,32 @@
                     <h4 class="text-2xl pb-4 font-medium">Mama Mia</h4>
                     <p class="text-white" id="footer-copyright">
                     <p id="footer-copyright-text">
-                    <p id="footer-copyright-text-address">New York, NY<br></p><br>
+                    <p id="address">New York, NY<br></p><br>
                     <p id="footer-copyright-text-contact-Phone">
-                        <strong>Phone:</strong> +1 (202) 555-0123<br></p>
+                        <strong id="phone">Phone:</strong> +1 (202) 555-0123<br></p>
                     <p id="footer-copyright-text-contact-Email">
-                        <strong>Email:</strong> me@mamamia.com<br></p>
+                        <strong id="email">Email:</strong> me@mamamia.com<br></p>
                     <p id="footer-copyright-text-contact-Address">
-                        <strong>Website:</strong> <a href="https://mamamia.com">mamamia.com</a><br></p>
+                        <strong id="website">Website:</strong> <a href="https://mamamia.com">mamamia.com</a><br></p>
                     </p>
                 </div>
                 <div class="grid grid-cols-2 grid-row-2 gap-5">
                     <div class="mb-5">
-                        <h4 class="text-2xl pb-4 text-white font-semibold" id="footer-Useful-Links">
+                        <h4 class="text-2xl pb-4 text-white font-semibold" id="useful-links">
                             Useful Links
                         </h4>
                         <ul class="flex flex-col space-y-3">
                             <li class="pd-8" id="footer-Useful-Links-Home">
-                                <a href="index.html" class="hover:text-yellow-500">Home</a>
+                                <a href="index.html" class="hover:text-yellow-500" id="home">Home</a>
                             </li>
                             <li class="pd-8" id="footer-Useful-Links-Menu">
-                                <a href="menu.html" class="hover:text-yellow-500">Menu</a>
+                                <a href="menu.html" class="hover:text-yellow-500" id="menu">Menu</a>
                             </li>
                             <li class="pd-8" id="footer-Useful-Links-About">
-                                <a href="about.html" class="hover:text-yellow-500">About</a>
+                                <a href="about.html" class="hover:text-yellow-500" id="about">About</a>
                             </li>
                             <li class="pd-8" id="footer-Useful-Links-Contact">
-                                <a href="contact.html" class="hover:text-yellow-500">Contact</a>
+                                <a href="contact.html" class="hover:text-yellow-500" id="contact">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -184,7 +188,7 @@
                                placeholder="example@example.com"
                                style="background-size: auto 24px !important; background-position: right center !important; background-repeat: no-repeat !important; background-origin: content-box !important;">
                         <button class="p-2 w1/3 bg-yellow-500 text-white hover:bg-yellow-600 rounded-2xl"
-                                id="footer-Contact-Form-Submit">
+                                id="newsletter-subscribe">
                             Subscribe
                         </button>
                     </label>
@@ -194,7 +198,7 @@
     </div>
     <div class="w-full bg-gray-900 text-gray-500 px-10">
         <div class="container mx-auto px-4 py-6 text-center">
-            <p id="copyright">
+            <p id="copyright" id="copyright-text">
                 Copyright © 2024
                 <a target="_blank" href="https://www.mamamia.com">Mama Mia Bar</a>
                 All Rights Reserved.

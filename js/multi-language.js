@@ -517,9 +517,6 @@ const languageMap_Context = {
     },
 }
 
-
-
-
 window.onload = function () {
     const languageSelect = document.getElementById("language");
     const savedLanguage = localStorage.getItem("language") || "en";

@@ -33,30 +33,51 @@
 </head>
 <body>
 <header class="border-b border-gray-300 py-4">
-    <nav x-data="{navbarOpen:false}">
+    <nav class="navbar" x-data="{navbarOpen:false}" id="navbar">
         <div class="container flex flex-wrap px-4 py-2 mx-auto flex items-center justify-between lg:space-x-4">
-            <a href="index.html" class="left-0 top-0 w-12 h-12">
+            <a href="index.html"
+               class="block mt-4 hover:underline hover:no-underline transition duration-200 ease-in-out border-2 border-transparent border-solid rounded-lg px-4 py-2">
                 <img src="/images/favicon.png" class="left-0 top-0 w-12 h-12" alt="">
+                <!-- Mama Mia Bar text svg -->
+                <div id="navbar-logo" class="hidden">
+                    <svg width="432pt" height="47pt" viewBox="0 0 432 47" xmlns="http://www.w3.org/2000/svg">
+                        <g id="fontsvg1712917853376" stroke-linecap="round" fill-rule="evenodd" fill="#000000">
+                            <path d="M 9.375 46.875 L 0 46.875 L 0 4.688 L 4.688 4.688 L 4.688 9.375 L 9.375 9.375 L 9.375 14.063 L 14.063 14.063 L 14.063 18.75 L 18.75 18.75 L 18.75 14.063 L 23.438 14.063 L 23.438 9.375 L 28.125 9.375 L 28.125 4.688 L 32.813 4.688 L 32.813 46.875 L 23.438 46.875 L 23.438 23.438 L 18.75 23.438 L 18.75 28.125 L 14.063 28.125 L 14.063 23.438 L 9.375 23.438 L 9.375 46.875 Z M 201.563 46.875 L 192.188 46.875 L 192.188 4.688 L 196.875 4.688 L 196.875 9.375 L 201.563 9.375 L 201.563 14.063 L 206.25 14.063 L 206.25 18.75 L 210.938 18.75 L 210.938 14.063 L 215.625 14.063 L 215.625 9.375 L 220.313 9.375 L 220.313 4.688 L 225 4.688 L 225 46.875 L 215.625 46.875 L 215.625 23.438 L 210.938 23.438 L 210.938 28.125 L 206.25 28.125 L 206.25 23.438 L 201.563 23.438 L 201.563 46.875 Z M 70.313 46.875 L 46.875 46.875 L 46.875 42.188 L 42.188 42.188 L 42.188 32.813 L 46.875 32.813 L 46.875 28.125 L 60.938 28.125 L 60.938 18.75 L 51.563 18.75 L 51.563 23.438 L 42.188 23.438 L 42.188 18.75 L 46.875 18.75 L 46.875 14.063 L 65.625 14.063 L 65.625 18.75 L 70.313 18.75 L 70.313 46.875 Z M 89.063 46.875 L 79.688 46.875 L 79.688 14.063 L 98.438 14.063 L 98.438 18.75 L 103.125 18.75 L 103.125 46.875 L 93.75 46.875 L 93.75 18.75 L 89.063 18.75 L 89.063 46.875 Z M 154.688 46.875 L 131.25 46.875 L 131.25 42.188 L 126.563 42.188 L 126.563 32.813 L 131.25 32.813 L 131.25 28.125 L 145.313 28.125 L 145.313 18.75 L 135.938 18.75 L 135.938 23.438 L 126.563 23.438 L 126.563 18.75 L 131.25 18.75 L 131.25 14.063 L 150 14.063 L 150 18.75 L 154.688 18.75 L 154.688 46.875 Z M 290.625 46.875 L 267.188 46.875 L 267.188 42.188 L 262.5 42.188 L 262.5 32.813 L 267.188 32.813 L 267.188 28.125 L 281.25 28.125 L 281.25 18.75 L 271.875 18.75 L 271.875 23.438 L 262.5 23.438 L 262.5 18.75 L 267.188 18.75 L 267.188 14.063 L 285.938 14.063 L 285.938 18.75 L 290.625 18.75 L 290.625 46.875 Z M 393.75 46.875 L 370.313 46.875 L 370.313 42.188 L 365.625 42.188 L 365.625 32.813 L 370.313 32.813 L 370.313 28.125 L 384.375 28.125 L 384.375 18.75 L 375 18.75 L 375 23.438 L 365.625 23.438 L 365.625 18.75 L 370.313 18.75 L 370.313 14.063 L 389.063 14.063 L 389.063 18.75 L 393.75 18.75 L 393.75 46.875 Z M 351.563 46.875 L 328.125 46.875 L 328.125 4.688 L 351.563 4.688 L 351.563 9.375 L 356.25 9.375 L 356.25 23.438 L 351.563 23.438 L 351.563 28.125 L 356.25 28.125 L 356.25 42.188 L 351.563 42.188 L 351.563 46.875 Z M 412.5 46.875 L 403.125 46.875 L 403.125 14.063 L 426.563 14.063 L 426.563 18.75 L 431.25 18.75 L 431.25 28.125 L 421.875 28.125 L 421.875 18.75 L 412.5 18.75 L 412.5 46.875 Z M 253.125 46.875 L 234.375 46.875 L 234.375 42.188 L 239.063 42.188 L 239.063 18.75 L 234.375 18.75 L 234.375 14.063 L 248.438 14.063 L 248.438 42.188 L 253.125 42.188 L 253.125 46.875 Z M 103.125 18.75 L 107.813 18.75 L 107.813 46.875 L 117.188 46.875 L 117.188 18.75 L 112.5 18.75 L 112.5 14.063 L 103.125 14.063 L 103.125 18.75 Z M 337.5 42.188 L 346.875 42.188 L 346.875 28.125 L 337.5 28.125 L 337.5 42.188 Z M 337.5 23.438 L 346.875 23.438 L 346.875 9.375 L 337.5 9.375 L 337.5 23.438 Z M 51.563 42.188 L 60.938 42.188 L 60.938 32.813 L 51.563 32.813 L 51.563 42.188 Z M 135.938 42.188 L 145.313 42.188 L 145.313 32.813 L 135.938 32.813 L 135.938 42.188 Z M 248.438 9.375 L 239.063 9.375 L 239.063 0 L 248.438 0 L 248.438 9.375 Z M 271.875 42.188 L 281.25 42.188 L 281.25 32.813 L 271.875 32.813 L 271.875 42.188 Z M 375 42.188 L 384.375 42.188 L 384.375 32.813 L 375 32.813 L 375 42.188 Z"
+                                  vector-effect="non-scaling-stroke"/>
+                        </g>
+                    </svg>
+                </div>
             </a>
+            <button class="lg:hidden inline-flex items-center justify-center w-10 h-10 ml-auto text-black border rounded-md outline-none lg:hidden focus:outline-none"
+                    @click="navbarOpen = !navbarOpen">
+                <svg xmlns="http://www.w3.org/2000/svg" class="right-0 top-0 w-6 h-6" fill="none" viewBox="0 0 24 24"
+                     stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
             <div class="items-center justify-center w-full lg:inline-flex lg:w-auto mt-2 lg:mt-0"
                  :class="{'hidden':!navbarOpen,'flex':navbarOpen}">
                 <ul class="flex flex-col lg:flex-row items-center">
                     <li>
-                        <a id="navbar-home" href="index.html"
-                           class="flex px-4 py-2 transition hover:bg-gray-200 rounded-md">
+                        <a href="index.html" class="flex px-4 py-2 transition hover:bg-gray-200 rounded-md"
+                           id="navbar-home">
                             Home</a>
                     </li>
                     <li>
-                        <a id="navbar-menu" href="menu.html"
-                           class="flex px-4 py-1 transition hover:bg-gray-200 rounded-md active bg-gradient-to-r border-t-2 border-green-400 bg-gradient-to-br from-indigo-400 to-green-500 hover:via-blue-700 hover:to-purple-700 text-white round-md flex md:inline-flex font-medium text-lg cursor-pointer hover:shadow-lg transition">Menu</a>
+                        <a href="menu.html" class="flex px-4 py-1 transition hover:bg-gray-200 rounded-md active bg-gradient-to-r border-t-2 border-green-400
+                           bg-gradient-to-br from-indigo-400 to-green-500 hover:via-blue-700 hover:to-purple-700 text-white round-md
+                           flex md:inline-flex font-medium text-lg cursor-pointer hover:shadow-lg transition"
+                           id="navbar-menu">Menu</a>
                     </li>
                     <li>
-                        <a id="navbar-about" href="about.html"
-                           class="flex px-4 py-2 transition hover:bg-gray-200 rounded-md">About</a>
+                        <a href="about.html"
+                           class="flex px-4 py-2 transition hover:bg-gray-200 rounded-md"
+                           id="navbar-about">About</a>
                     </li>
                     <li>
-                        <a id="navbar-contact" href="contact.html"
-                           class="flex px-4 py-2 transition hover:bg-gray-200 rounded-md">Contact
+                        <a href="contact.html" class="flex px-4 py-2 transition hover:bg-gray-200 rounded-md"
+                           id="navbar-contact">Contact
                             Us</a>
                     </li>
                 </ul>
@@ -68,7 +89,7 @@
                     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8"/>
                     <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484q-.121.12-.242.234c-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z"/>
                 </svg>
-                <span id="language-select">Language:</span>
+                <span id="languag-select">Language:</span>
                 <select class="ml-2 text-gray-800 text-sm" id="language" onchange="changeLanguage(this)">
                     <option id="language-select-en" value="en" selected>English</option>
                     <option id="language-select-ja" value="ja">日本語</option>
@@ -76,6 +97,7 @@
                     <option id="language-select-zh-hans" value="zh-hans">简体中文</option>
                 </select>
             </div>
+        </div>
         </div>
     </nav>
 </header>
@@ -219,7 +241,7 @@
             </div>
         </div>
     </div>
-<!--    Cart out-->
+    <!--    Cart out-->
 
 </section>
 <footer>
@@ -230,14 +252,15 @@
                     <img src="/images/favicon.png" class="w-20 h-20 rounded-full"
                          alt="Mama Mia logo">
                     <h4 class="text-2xl pb-4 font-medium">Mama Mia</h4>
-                    <p class="text-white">
-                        <span id="address">
-                        New York, NY<br>
-                            </span>
-                        <br>
-                        <strong id="phone">Phone:</strong> +1 (202) 555-0123<br>
-                        <strong id="email">Email:</strong> me@mamamia.com<br>
-                        <strong id="website">Website:</strong> <a href="https://mamamia.com">mamamia.com</a>
+                    <p class="text-white" id="footer-copyright">
+                    <p id="footer-copyright-text">
+                    <p id="address">New York, NY<br></p><br>
+                    <p id="footer-copyright-text-contact-Phone">
+                        <strong id="phone">Phone:</strong> +1 (202) 555-0123<br></p>
+                    <p id="footer-copyright-text-contact-Email">
+                        <strong id="email">Email:</strong> me@mamamia.com<br></p>
+                    <p id="footer-copyright-text-contact-Address">
+                        <strong id="website">Website:</strong> <a href="https://mamamia.com">mamamia.com</a><br></p>
                     </p>
                 </div>
                 <div class="grid grid-cols-2 grid-row-2 gap-5">
@@ -246,29 +269,28 @@
                             Useful Links
                         </h4>
                         <ul class="flex flex-col space-y-3">
-                            <li class="pd-8">
+                            <li class="pd-8" id="footer-Useful-Links-Home">
                                 <a href="index.html" class="hover:text-yellow-500" id="home">Home</a>
                             </li>
-                            <li class="pd-8">
+                            <li class="pd-8" id="footer-Useful-Links-Menu">
                                 <a href="menu.html" class="hover:text-yellow-500" id="menu">Menu</a>
                             </li>
-                            <li class="pd-8">
+                            <li class="pd-8" id="footer-Useful-Links-About">
                                 <a href="about.html" class="hover:text-yellow-500" id="about">About</a>
                             </li>
-                            <li class="pd-8">
+                            <li class="pd-8" id="footer-Useful-Links-Contact">
                                 <a href="contact.html" class="hover:text-yellow-500" id="contact">Contact</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <form>
-                    <label>
+                    <label id="footer-Contact-Form">
                         <input type="email" class="text-gray-500 w-2/3 p-2 focus-border-white rounded-2xl"
                                placeholder="example@example.com"
                                style="background-size: auto 24px !important; background-position: right center !important; background-repeat: no-repeat !important; background-origin: content-box !important;">
-                        <button
-                                id="newsletter-subscribe"
-                                class="p-2 w1/3 bg-yellow-500 text-white hover:bg-yellow-600 rounded-2xl">
+                        <button class="p-2 w1/3 bg-yellow-500 text-white hover:bg-yellow-600 rounded-2xl"
+                                id="newsletter-subscribe">
                             Subscribe
                         </button>
                     </label>
@@ -278,9 +300,9 @@
     </div>
     <div class="w-full bg-gray-900 text-gray-500 px-10">
         <div class="container mx-auto px-4 py-6 text-center">
-            <p id="copyright">
+            <p id="copyright" id="copyright-text">
                 Copyright © 2024
-                <a target="_blank" href="https://www.mamamia.com">Mama Mia</a>
+                <a target="_blank" href="https://www.mamamia.com">Mama Mia Bar</a>
                 All Rights Reserved.
             </p>
         </div>
