@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d77d1c48-c89b-4932-bc12-a417895373d8" name="Changes" comment="remove this file">
+      <change afterPath="$PROJECT_DIR$/NotSupportedBrowser.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/is-supported-browser.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/multi-language.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/multi-language.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/newsletter.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/newsletter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/template.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +21,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -89,7 +89,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-WS-241.14494.235" />
+        <option value="bundled-js-predefined-1d06a55b98c1-2e7d6887c066-JavaScript-WS-241.15989.47" />
       </set>
     </attachedChunks>
   </component>
@@ -114,7 +114,14 @@
       <workItem from="1712956796388" duration="115000" />
       <workItem from="1712957149839" duration="715000" />
       <workItem from="1712957871580" duration="33000" />
-      <workItem from="1712960414638" duration="1404000" />
+      <workItem from="1712960414638" duration="1677000" />
+      <workItem from="1712963344988" duration="185000" />
+      <workItem from="1712963660091" duration="326000" />
+      <workItem from="1713088497057" duration="661000" />
+      <workItem from="1713236311738" duration="22000" />
+      <workItem from="1713459143999" duration="189000" />
+      <workItem from="1713865630782" duration="8000" />
+      <workItem from="1713865651400" duration="19000" />
     </task>
     <task id="LOCAL-00001" summary="upload">
       <option name="closed" value="true" />
@@ -228,7 +235,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712960828128</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="remove this file">
+      <option name="closed" value="true" />
+      <created>1712962081296</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1712962081296</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

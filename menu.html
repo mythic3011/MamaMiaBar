@@ -286,11 +286,11 @@
                 </div>
                 <form>
                     <label id="footer-Contact-Form">
-                        <input type="email" class="text-gray-500 w-2/3 p-2 focus-border-white rounded-2xl"
+                        <input type="email" class="text-gray-500 w-2/3 p-2 focus-border-white rounded-2xl" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="example@example.com"
                                placeholder="example@example.com"
                                style="background-size: auto 24px !important; background-position: right center !important; background-repeat: no-repeat !important; background-origin: content-box !important;">
                         <button class="p-2 w1/3 bg-yellow-500 text-white hover:bg-yellow-600 rounded-2xl"
-                                id="newsletter-subscribe">
+                                id="newsletter-subscribe" onclick="sendEmail()">
                             Subscribe
                         </button>
                     </label>

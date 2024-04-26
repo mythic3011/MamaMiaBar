@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Not Supported Browser | MamaMia Bar</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="1 month" name="revisit-after">
+    <meta content="general" name="rating">
+    <meta content="global" name="distribution">
+    <meta content="WebStorm" name="generator">
+    <meta content="#000000" name="theme-color">
+    <!-- Primary Meta Tags -->
+    <meta content="English" name="language">
+    <meta content="MamaMia Bar" name="title">
+    <meta content="MamaMia Bar is a bar in the city of New York. It is a place where people can enjoy a drink and a good time."
+          name="description">
+    <meta content="MamaMia Bar, New York, bar, drink, party, fun, people, New York City" name="keywords">
+    <meta content="MamaMia Bar" name="author">
+    <!-- SEO Meta Tags -->
+    <meta content="index, follow" name="robots">
+    <meta content="index, follow" name="googlebot">
+    <meta content="#000000" name="msapplication-TileColor">
+    <meta content="images/favicon.png" name="msapplication-TileImage">
+    <meta content="#000000" name="theme-color">
+    <link href="images/favicon.png" rel="icon" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <!-- Multi-Language javascript on page -->
+    <script src="js/multi-language.js"></script>
+    <script src="js/hashmap.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/newsletter.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <!-- tailwind.css -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+<header class="border-b border-gray-300 py-4">
+    <nav class="navbar" id="navbar" x-data="{navbarOpen:false}">
+        <div class="container flex flex-wrap px-4 py-2 mx-auto flex items-center justify-between lg:space-x-4">
+            <a class="block mt-4 hover:underline hover:no-underline transition duration-200 ease-in-out border-2 border-transparent border-solid rounded-lg px-4 py-2"
+               href="index.html">
+                <img alt="" class="left-0 top-0 w-12 h-12" src="/images/favicon.png">
+                <!-- Mama Mia Bar text svg -->
+                <div class="hidden" id="navbar-logo">
+
+                </div>
+            </a>
+            <button @click="navbarOpen = !navbarOpen"
+                    class="lg:hidden inline-flex items-center justify-center w-10 h-10 ml-auto text-black border
+                                  rounded-md outline-none lg:hidden focus:outline-none">
+            </button>
+            <div :class="{'hidden':!navbarOpen,'flex':navbarOpen}"
+                 class="items-center justify-center w-full lg:inline-flex lg:w-auto mt-2 lg:mt-0">
+                <ul class="flex flex-col lg:flex-row items-center">
+                    <li>
+                        <a class="flex px-4 py-2 transition hover:bg-gray-200 rounded-md"
+                           href="index.html">
+                            Home</a>
+                    </li>
+                    <li>
+                        <a class="flex px-4 py-2 transition hover:bg-gray-200 rounded-md"
+                           href="menu.html"
+                           id="navbar-menu">Menu</a>
+                    </li>
+                    <li>
+                        <a class="flex px-4 py-2 transition hover:bg-gray-200 rounded-md"
+                           href="about.html"
+                           id="navbar-about">About</a>
+                    </li>
+                    <li>
+                        <a class="flex px-4 py-2 transition hover:bg-gray-200 rounded-md"
+                           href="contact.html"
+                           id="navbar-contact">Contact
+                            Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center">
+                <!-- language svg -->
+                <svg class="bi bi-globe-americas" fill="currentColor" height="16" viewBox="0 0 16 16"
+                     width="16" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8"></path>
+                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484q-.121.12-.242.234c-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z"></path>
+                </svg>
+                <label for="language-select">
+                    <span id="language-select">Language:</span>
+                    <select class="ml-2 text-gray-800 text-sm" id="language"
+                            onchange="changeLanguage(this)">
+                        <option id="language-select-en" selected value="en">English</option>
+                        <option id="language-select-ja" value="ja">日本語</option>
+                        <option id="language-select-zh-hant" value="zh-hant">繁體中文</option>
+                        <option id="language-select-zh-hans" value="zh-hans">简体中文</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+    </nav>
+</header>
+<section class="pt-24 pb-24 md:px-24 p-auto">
+    <div class="flex items-center container mx-auto justify-between relative">
+        <div class="bg-amber-50 shadow- 2xl rounded-lg text-center 2xl:text-left mx-auto">
+            <div class="text-center 2xl mx-auto">
+                <h1 class="text-5xl relative text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-purple-400 mb-4 text-center">
+                    Something went wrong! Sorry for the inconvenience.
+                </h1>
+                <p class="text-left text-2xl font-medium text-gray-600 mt-4 mb-4">
+                    We are sorry, but your browser is not supported. Please use a modern browser like Chrome or Edge.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="p-10 bg-gradient-to-r from-purple-400 via-indigo-500 to-pink-500 text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-2 gap-10">
+                <div class="mb-5">
+                    <img alt="Mama Mia logo" class="w-20 h-20 rounded-full"
+                         src="/images/favicon.png">
+                    <h4 class="text-2xl pb-4 font-medium">Mama Mia</h4>
+                    <p class="text-white" id="footer-copyright">
+                    <p id="footer-copyright-text">
+                    <p id="address">New York, NY<br></p><br>
+                    <p id="footer-copyright-text-contact-Phone">
+                        <strong id="phone">Phone:</strong> +1 (202) 555-0123<br></p>
+                    <p id="footer-copyright-text-contact-Email">
+                        <strong id="email">Email:</strong> me@mamamia.com<br></p>
+                    <p id="footer-copyright-text-contact-Address">
+                        <strong id="website">Website:</strong> <a href="https://mamamia.com">mamamia.com</a><br></p>
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 grid-row-2 gap-5">
+                    <div class="mb-5">
+                        <h4 class="text-2xl pb-4 text-white font-semibold" id="footer-Useful-Links">
+                            Useful Links
+                        </h4>
+                        <ul class="flex flex-col space-y-3">
+                            <li class="pd-8" id="footer-Useful-Links-Home">
+                                <a class="hover:text-yellow-500" href="index.html" id="home">Home</a>
+                            </li>
+                            <li class="pd-8" id="footer-Useful-Links-Menu">
+                                <a class="hover:text-yellow-500" href="menu.html" id="menu">Menu</a>
+                            </li>
+                            <li class="pd-8" id="footer-Useful-Links-About">
+                                <a class="hover:text-yellow-500" href="about.html" id="about">About</a>
+                            </li>
+                            <li class="pd-8" id="footer-Useful-Links-Contact">
+                                <a class="hover:text-yellow-500" href="contact.html" id="contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <form>
+                    <label id="footer-Contact-Form">
+                        <input class="text-gray-500 w-2/3 p-2 focus-border-white rounded-2xl"
+                               placeholder="example@example.com"
+                               style="background-size: auto 24px !important; background-position: right center !important; background-repeat: no-repeat !important; background-origin: content-box !important;"
+                               type="email">
+                        <button class="p-2 w1/3 bg-yellow-500 text-white hover:bg-yellow-600 rounded-2xl"
+                                id="newsletter-subscribe">
+                            Subscribe
+                        </button>
+                    </label>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="w-full bg-gray-900 text-gray-500 px-10">
+        <div class="container mx-auto px-4 py-6 text-center">
+            <p id="copyright" id="copyright-text">
+                Copyright © 2024
+                <a href="https://www.mamamia.com" target="_blank">Mama Mia Bar</a>
+                All Rights Reserved.
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
