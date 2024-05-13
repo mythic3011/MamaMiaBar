@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d77d1c48-c89b-4932-bc12-a417895373d8" name="Changes" comment="remove this file">
-      <change afterPath="$PROJECT_DIR$/NotSupportedBrowser.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/is-supported-browser.js" afterDir="false" />
+    <list default="true" id="d77d1c48-c89b-4932-bc12-a417895373d8" name="Changes" comment="Add NotSupportedBrowser.html">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NotSupportedBrowser.html" beforeDir="false" afterPath="$PROJECT_DIR$/NotSupportedBrowser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/landing.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/landing.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/newsletter.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/newsletter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/landing.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/landing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/multi-language.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/multi-language.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,17 +80,17 @@
       <recent name="C:\Users\a1667\WebstormProjects\MamaMia\images\drink" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\a1667\WebstormProjects\MamaMia\images\landing" />
+      <recent name="C:\Users\a1667\WebstormProjects\MamaMia\images" />
       <recent name="C:\Users\a1667\WebstormProjects\MamaMia\MamaMia" />
       <recent name="C:\Users\a1667\WebstormProjects\MamaMia\MamaMia\css" />
       <recent name="C:\Users\a1667\WebstormProjects\MamaMia\images\drink" />
-      <recent name="C:\Users\a1667\WebstormProjects\MamaMia\images" />
-      <recent name="C:\Users\a1667\WebstormProjects\MamaMia\images\landing" />
     </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-2e7d6887c066-JavaScript-WS-241.15989.47" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-WS-241.15989.105" />
       </set>
     </attachedChunks>
   </component>
@@ -122,6 +123,9 @@
       <workItem from="1713459143999" duration="189000" />
       <workItem from="1713865630782" duration="8000" />
       <workItem from="1713865651400" duration="19000" />
+      <workItem from="1714150664410" duration="2521000" />
+      <workItem from="1714282863658" duration="2555000" />
+      <workItem from="1715251721473" duration="27000" />
     </task>
     <task id="LOCAL-00001" summary="upload">
       <option name="closed" value="true" />
@@ -243,7 +247,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712962081296</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Add NotSupportedBrowser.html">
+      <option name="closed" value="true" />
+      <created>1714150696861</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1714150696861</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,6 +275,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="upload" />
     <MESSAGE value="remove this file" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove this file" />
+    <MESSAGE value="Add NotSupportedBrowser.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add NotSupportedBrowser.html" />
   </component>
 </project>

@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/material-components-web/4.0.0/material-components-web.min.css");
+@import url("https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css");
+@font-face {
+  font-family: "Geist Sans";
+  src: url("https://assets.codepen.io/605876/GeistVF.ttf") format("truetype");
+}
+
 nav {
     position: fixed;
     top: 0;

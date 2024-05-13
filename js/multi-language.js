@@ -574,3 +574,15 @@ function updateContactPageLanguage(language) {
         }
     }
 }
+
+function changeLanguage(language) {
+    const translations = languageMap[language];
+    for (const key in translations) {
+        const element = document.getElementById(key);
+        if (element) {
+            element.textContent = translations[key];
+        }
+    }
+    updateAboutPageLanguage(language);
+    updateContactPageLanguage(language);
+}
